@@ -1,0 +1,1 @@
+# kadry-mini-support
