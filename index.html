@@ -6,31 +6,31 @@
     <title>Kadry Mini - Zarządzanie urlopami</title>
     <meta name="description" content="Kadry Mini - prosta aplikacja do zarządzania urlopami i nieobecnościami pracowników zgodnie z polskim prawem pracy.">
     <style>
-        * { box-sizing: border-box; }
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
-            max-width: 900px; 
-            margin: 0 auto; 
-            padding: 20px; 
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
             line-height: 1.7;
             color: #333;
             background: #fafafa;
         }
         .header {
             text-align: center;
-            padding: 40px 20px;
-            background: linear-gradient(135deg, #2196F3, #1976D2);
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #2196F3, #1565C0);
             color: white;
             border-radius: 16px;
             margin-bottom: 30px;
         }
-        .header h1 { margin: 0 0 10px 0; font-size: 2.5em; }
-        .header p { margin: 0; font-size: 1.2em; opacity: 0.9; }
-        h2 { 
-            color: #1976D2; 
-            border-bottom: 3px solid #2196F3; 
+        .header h1 { font-size: 2.5em; margin-bottom: 10px; }
+        .header p { font-size: 1.2em; opacity: 0.9; }
+        h2 {
+            color: #1976D2;
+            border-bottom: 3px solid #2196F3;
             padding-bottom: 10px;
-            margin-top: 40px;
+            margin: 40px 0 20px;
         }
         .features {
             display: grid;
@@ -44,23 +44,25 @@
             border-radius: 12px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
-        .feature h3 { color: #1976D2; margin-top: 0; }
-        .faq { 
-            background: white; 
-            padding: 20px 25px; 
-            border-radius: 12px; 
+        .feature h3 { color: #1976D2; margin: 0 0 10px; }
+        .feature p { margin: 0; }
+        .faq {
+            background: white;
+            padding: 20px 25px;
+            border-radius: 12px;
             margin: 15px 0;
             box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
         .faq strong { color: #1976D2; }
-        .contact { 
-            background: linear-gradient(135deg, #e3f2fd, #bbdefb); 
-            padding: 30px; 
-            border-radius: 12px; 
+        .faq p { margin: 8px 0 0; }
+        .contact {
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+            padding: 30px;
+            border-radius: 12px;
             margin-top: 40px;
             text-align: center;
         }
-        .contact h2 { border: none; margin-top: 0; }
+        .contact h2 { border: none; margin: 0 0 10px; }
         .email-link {
             display: inline-block;
             background: #1976D2;
@@ -70,17 +72,9 @@
             text-decoration: none;
             font-weight: bold;
             margin-top: 15px;
+            cursor: pointer;
         }
         .email-link:hover { background: #1565C0; }
-        .badge {
-            display: inline-block;
-            background: #4CAF50;
-            color: white;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.85em;
-            margin-left: 10px;
-        }
         footer {
             text-align: center;
             margin-top: 50px;
@@ -88,16 +82,27 @@
             color: #666;
             font-size: 14px;
         }
-        .privacy {
-            background: white;
-            padding: 20px 25px;
-            border-radius: 12px;
-            margin-top: 30px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        footer a { color: #1976D2; text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
         }
+        nav a {
+            color: #1976D2;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+        nav a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
+    <nav>
+        <a href="index.html">Strona główna</a>
+        <a href="privacy-policy.html">Polityka prywatności</a>
+    </nav>
+
     <div class="header">
         <h1>Kadry Mini</h1>
         <p>Prosta aplikacja do zarządzania urlopami pracowników</p>
@@ -106,35 +111,43 @@
     <h2>Funkcje aplikacji</h2>
     <div class="features">
         <div class="feature">
-            <h3>📅 Kalendarz urlopów</h3>
+            <h3>Kalendarz urlopów</h3>
             <p>Przejrzysty widok tygodniowy z kolorowymi paskami dla każdego pracownika.</p>
         </div>
         <div class="feature">
-            <h3>⚖️ Zgodność z prawem</h3>
+            <h3>Zgodność z prawem</h3>
             <p>2-letnia pula urlopowa i automatyczne przenoszenie dni zgodnie z Kodeksem Pracy.</p>
         </div>
         <div class="feature">
-            <h3>📊 Kontrola limitów</h3>
+            <h3>Kontrola limitów</h3>
             <p>System pilnuje dostępnych dni i ostrzega przed przekroczeniem.</p>
         </div>
         <div class="feature">
-            <h3>🔒 Prywatność</h3>
+            <h3>Prywatność</h3>
             <p>Wszystkie dane przechowywane lokalnie na Twoim urządzeniu.</p>
+        </div>
+        <div class="feature">
+            <h3>Różne typy nieobecności</h3>
+            <p>Urlop wypoczynkowy, na żądanie, okolicznościowy, macierzyński, chorobowy i inne.</p>
+        </div>
+        <div class="feature">
+            <h3>Praca offline</h3>
+            <p>Pełna funkcjonalność bez dostępu do internetu.</p>
         </div>
     </div>
 
     <h2>Najczęściej zadawane pytania</h2>
-    
+
     <div class="faq">
         <strong>Jak dodać pracownika?</strong>
-        <p>Przejdź do zakładki "Pracownicy" i kliknij przycisk "+" w prawym dolnym rogu ekranu.</p>
+        <p>Przejdź do zakładki „Pracownicy" i kliknij przycisk „+" w prawym dolnym rogu ekranu.</p>
     </div>
-    
+
     <div class="faq">
         <strong>Jak działa 2-letnia pula urlopowa?</strong>
         <p>Zgodnie z polskim prawem pracy, niewykorzystane dni urlopu przechodzą na następny rok. Aplikacja automatycznie sumuje dni z bieżącego i poprzedniego roku, stosując zasadę FIFO (najpierw wykorzystywane są starsze dni).</p>
     </div>
-    
+
     <div class="faq">
         <strong>Jakie typy nieobecności są dostępne?</strong>
         <p>Urlop wypoczynkowy, urlop na żądanie, urlop okolicznościowy (ślub, narodziny dziecka, pogrzeb), urlop macierzyński/ojcowski, zwolnienie lekarskie i inne.</p>
@@ -142,41 +155,29 @@
 
     <div class="faq">
         <strong>Gdzie są przechowywane moje dane?</strong>
-        <p>Wszystkie dane są przechowywane wyłącznie lokalnie na Twoim urządzeniu. Nie wysyłamy żadnych informacji na zewnętrzne serwery.</p>
+        <p>Wszystkie dane są przechowywane wyłącznie na Twoim urządzeniu. Nie wysyłamy żadnych informacji na zewnętrzne serwery.</p>
     </div>
 
     <div class="faq">
         <strong>Czy mogę używać aplikacji offline?</strong>
-        <p>Tak! Aplikacja działa w pełni offline. Nie wymaga połączenia z internetem.</p>
-    </div>
-
-    <div class="privacy">
-        <h2>Polityka prywatności</h2>
-        <p><strong>Kadry Mini</strong> szanuje Twoją prywatność:</p>
-        <ul>
-            <li>Nie zbieramy żadnych danych osobowych</li>
-            <li>Nie wysyłamy danych na zewnętrzne serwery</li>
-            <li>Wszystkie informacje pozostają na Twoim urządzeniu</li>
-            <li>Nie używamy plików cookies ani narzędzi analitycznych</li>
-        </ul>
+        <p>Tak. Aplikacja działa w pełni offline, nie wymaga połączenia z internetem.</p>
     </div>
 
     <div class="contact">
         <h2>Kontakt i wsparcie</h2>
-        <p>Masz pytania, sugestie lub napotkałeś problem?<br>Chętnie pomożemy!</p>
+        <p>Masz pytania, sugestie lub napotkałeś problem? Chętnie pomożemy!</p>
         <a class="email-link" id="contact-btn" href="#">Napisz do nas</a>
     </div>
 
     <footer>
-        <p>© 2025 Kadry Mini. Wszelkie prawa zastrzeżone.</p>
+        <p><a href="privacy-policy.html">Polityka prywatności</a></p>
+        <p style="margin-top: 10px;">&copy; 2025 Kadry Mini. Wszelkie prawa zastrzeżone.</p>
     </footer>
 
     <script>
-        // Email obfuscation - ukrycie przed botami
         document.getElementById('contact-btn').addEventListener('click', function(e) {
             e.preventDefault();
-            var u = 'kadrymini2';
-            var d = 'gmail.com';
+            var u = 'kadrymini2'; var d = 'gmail.com';
             window.location.href = 'mai' + 'lto:' + u + '@' + d;
         });
     </script>
